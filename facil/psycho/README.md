@@ -1,6 +1,6 @@
 # 🧠 psycho
 
-![IMAGEN_MAQUINA_PORTADA](/dockerlabs/blob/main/facil/psycho/imagenes/portadaMaquina.png)
+![IMAGEN_MAQUINA_PORTADA](/imagenes/portadaMaquina.png)
 
 ---
 
