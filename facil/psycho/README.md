@@ -1,3 +1,3 @@
 # PSYCHO
-![Psycho](/imagenes/portadaMaquina)
+![Psycho](/imagenes/portadaMaquina.png)
 ---
