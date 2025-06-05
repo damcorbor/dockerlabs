@@ -41,7 +41,7 @@ Accedemos al ``shell.php``, pero en principio no muestra nada. Para encontrar el
 
 ![FUZZING](./imagenes/fuzzing.png)
 
-¡Perfecto! Descubrimos que el parámetro es: parameter.
+¡Perfecto! Descubrimos que el parámetro es: ``parameter``.
 
 Con esto en mano, probamos si es vulnerable a LFI (Local File Inclusion), intentando cargar un archivo del sistema: ``http://172.17.0.2/shell.php?parameter=/etc/passwd``
 
