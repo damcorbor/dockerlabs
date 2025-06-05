@@ -121,8 +121,22 @@ En este reto hemos visto:
 
   - Y cómo explotar permisos de escritura en un directorio para ejecutar un script como root.
 
-<br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 🛠️ Herramientas, comandos y servicios usados
 
+### 🔍 Nmap
+```
+nmap -p- --open -A -sS -Pn -n <IP>
+- -p-: escanea todos los puertos.
 
+- --open: muestra solo los puertos abiertos.
+
+- -A: detección de sistema y versión.
+
+- -sS: escaneo SYN, más sigiloso.
+
+- -Pn: no hace ping previo.
+
+- -n: no resuelve nombres DNS. 
+```  
