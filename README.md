@@ -29,8 +29,8 @@ La propia plataforma [DockerLabs.es](https://dockerlabs.es) explica cómo inicia
 3. **Ejecuta el laboratorio.**  
   Una vez descomprimido suelen haber unos 2 archivos dentro, un ``auto_deploy.sh`` (script de despliegue) y el  ``laboratorio.tar`` (imagen del laboratorio).
   Para iniciar el laboratorio, ejecuta:
-  ```
-  sudo bash auto_deploy.sh laboratorio.tar
-  ```
+   ```
+   sudo bash auto_deploy.sh laboratorio.tar
+   ```
 4. **Obtén la IP del laboratorio.**
    Una vez iniciado, el script suele mostrarte la IP del contenedor en la propia terminal.
