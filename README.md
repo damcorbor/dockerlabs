@@ -33,5 +33,4 @@ La propia plataforma [DockerLabs.es](https://dockerlabs.es) explica cómo inicia
    sudo bash auto_deploy.sh laboratorio.tar
    ```
 4. **Obtén la IP del laboratorio.**
-
    Una vez iniciado, el script suele mostrarte la IP del contenedor en la propia terminal.
