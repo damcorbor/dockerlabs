@@ -1,7 +1,7 @@
 # 🤥 pequeñas-mentirosas
 
 ![IMAGEN_MAQUINA_PORTADA](./imagenes/portadaMaquina.png)
-> 💡 NOTA:  Al final suelo dejar una lista con los comandos, herramientas y servicios que he usado durante el laboratorio, y los explico un poco por si alguien quiere repasarlos o usarlos como referencia.
+> 💡 NOTA:  En  dejar una lista con los comandos, herramientas y servicios que he usado durante el laboratorio, y los explico un poco por si alguien quiere repasarlos o usarlos como referencia.
 ---
 
 ## 🕵️‍♂️ Reconocimiento
