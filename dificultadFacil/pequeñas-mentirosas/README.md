@@ -73,3 +73,15 @@ Y ejecutamos dicho ``.py`` con python3 para acceder como root.
 ![ACCESO ROOT](./imagenes/root.png)
 
 Máquina comprometida 🔓
+
+---
+
+## 🏁 Conclusión
+
+En este reto hemos visto:
+
+- Cómo realizar un reconocimiento básico mediante escaneo de puertos y fuzzing web.
+- Cómo usar fuerza bruta con `hydra` para obtener acceso por SSH.
+- Cómo listar usuarios del sistema y probar credenciales para realizar movimiento lateral.
+- Cómo identificar binarios ejecutables con `sudo` y aprovechar `python3` para escalar privilegios hasta root.
+
