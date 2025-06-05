@@ -27,8 +27,8 @@ La propia plataforma [DockerLabs.es](https://dockerlabs.es) explica cómo inicia
    unzip nombre_laboratorio.zip
    ```
 3. **Ejecuta el laboratorio.**  
-  Una vez descomprimido suelen haber unos 2 archivos dentro, un ``auto_deploy.sh`` (script de despliegue) y el  ``laboratorio.tar`` (imagen del laboratorio).
-  Para iniciar el laboratorio, ejecuta:
+   Una vez descomprimido suelen haber unos 2 archivos dentro, un ``auto_deploy.sh`` (script de despliegue) y el  ``laboratorio.tar`` (imagen del laboratorio).
+   Para iniciar el laboratorio, ejecuta:
    ```
    sudo bash auto_deploy.sh laboratorio.tar
    ```
