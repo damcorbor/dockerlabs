@@ -16,21 +16,21 @@ La propia plataforma [DockerLabs.es](https://dockerlabs.es) explica cómo inicia
 
 ### Pasos para iniciar un laboratorio:
 
-1. **Descarga el laboratorio en formato `.zip` desde DockerLabs.**  
+1. **Descarga el laboratorio en formato `.zip` desde DockerLabs.**
    Normalmente lo encontrarás en el propio reto.
 
-
-2. **Descomprime el archivo ZIP.**  
+3. **Descomprime el archivo ZIP.**
    Puedes hacerlo desde la terminal con el comando:
 
    ```bash
    unzip nombre_laboratorio.zip
    ```
-3. **Ejecuta el laboratorio.**  
+
+4. **Ejecuta el laboratorio.**
    Una vez descomprimido suelen haber unos 2 archivos dentro, un ``auto_deploy.sh`` (script de despliegue) y el  ``laboratorio.tar`` (imagen del laboratorio).
    Para iniciar el laboratorio, ejecuta:
    ```
    sudo bash auto_deploy.sh laboratorio.tar
    ```
-4. **Obtén la IP del laboratorio.**
+6. **Obtén la IP del laboratorio.**
    Una vez ejectuado, la propia terminal suele mostrarte la siguiente informaicon: ``IP del contenedor`` y ``como finalizar el laboratorio (Cntrl + c)``.    
