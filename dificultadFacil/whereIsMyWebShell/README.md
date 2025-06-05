@@ -19,8 +19,6 @@ Aparte del típico `index.html`, aparecen dos archivos interesantes: `warning.ht
 
 Entramos en `index.html` y, al revisar el código fuente, encontramos algo curioso:
 
-> "guardo un secreto en /tmp"
-
 ![Código fuente](./imagenes/codigo.png)
 
 De momento no podemos hacer mucho con esto, pero lo dejamos apuntado por si nos sirve más adelante.
@@ -36,7 +34,7 @@ Con esta información, podemos deducir que el archivo `shell.php` probablemente 
 system($_GET['cmd']);
 ?>
 ```
-Si logramos encontrar el parámetro adecuado (en este ejemplo sería cmd), podríamos llegar a ejecutar comandos en el servidor de forma remota.
+Si logramos encontrar el parámetro adecuado (cmd), podríamos llegar a ejecutar comandos en el servidor de forma remota.
 
 ## 💥 Explotación
 Accedemos al ``shell.php``, pero en principio no muestra nada. Para encontrar el parámetro que usa, lanzamos un fuzzing con un diccionario.
