@@ -3,7 +3,7 @@
 ![IMAGEN_MAQUINA_PORTADA](./imagenes/portadaMaquina.png)
 
 ---
-
+> 💡 NOTA: Al final suelo dejar una lista con los comandos, herramientas y servicios que uso durante el laboratorio, por si alguien quiere repasarlos o usarlos como referencia.
 ## 🔎 Fase 1 - Reconocimiento
 
 Para comenzar, lanzamos un escaneo de puertos con **nmap** para ver qué servicios están expuestos por la máquina.
