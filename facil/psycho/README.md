@@ -83,7 +83,7 @@ Una vez somos **luisillo**, hacemos otra vez `sudo -l`.
 
 Nos dice que podemos ejecutar un script Python como **cualquier usuario**, incluso **root**.
 
-Primero, revisamos los permisos del script original en `/opt`.
+Primero, revisamos los permisos del script original en `/opt`, ya que, si es posible modificarlo o eliminarlo para crear uno nuevo, podremos ahorrar trabajo.
 
 ![IMAGEN PERMISOS SCRIPT.PY](./imagenes/permisosScript.png)
 
@@ -99,18 +99,23 @@ Creamos nuestro propio `paw.py` con el siguiente contenido:
 import os
 os.system("/bin/bash")
 ```
-Ejecutamos el script usando sudo con el usuario root, y obtenemos acceso root completo.
+![NUEVO SCRIPT](./imagenes/nuevoScript.png)
+
+Ejecutamos el script usando sudo con el usuario root, y obtendremos acceso root completo.
+
+![NUEVO SCRIPT EJECUCCION](./imagenes/ejecuccion_script.png)
+
+Máquina comprometida 🔓
+
+---
 
 🏁 Conclusión
-Máquina comprometida 🔓
 En este reto hemos visto:
+  Cómo detectar y explotar una vulnerabilidad LFI.
 
-Cómo detectar y explotar una vulnerabilidad LFI.
+  Cómo escalar privilegios desde un usuario normal usando sudo + binarios vulnerables (perl).
 
-Cómo escalar privilegios desde un usuario normal usando sudo + binarios vulnerables (perl).
+  Cómo hacer movimiento lateral a otro usuario (vaxei → luisillo).
 
-Cómo hacer movimiento lateral a otro usuario (vaxei → luisillo).
+  Y cómo explotar permisos de escritura en un directorio para ejecutar un script como root.
 
-Y cómo explotar permisos de escritura en un directorio para ejecutar un script como root.
-
-💡 Una máquina muy entretenida con pasos claros y técnicas útiles que se repiten mucho en CTFs y entornos reales.
