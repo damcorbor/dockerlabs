@@ -109,7 +109,8 @@ Máquina comprometida 🔓
 
 ---
 
-##🏁 Conclusión
+## 🏁 Conclusión
+
 En este reto hemos visto:
   Cómo detectar y explotar una vulnerabilidad LFI.
 
