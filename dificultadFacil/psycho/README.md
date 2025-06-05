@@ -121,8 +121,7 @@ En este reto hemos visto:
 
   - Y cómo explotar permisos de escritura en un directorio para ejecutar un script como root.
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 🛠️ Herramientas, comandos y servicios usados
 
@@ -148,6 +147,17 @@ Escanea puertos y detecta servicios.
 ```
 gobuster dir -u http://<IP>/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,py,html,txt,js
 Hace fuzzing para encontrar directorios o archivos ocultos.
-    - -w: diccionario.
-    - -x: extensiones que queremos probar.
-```  
+    -w: diccionario.
+    -x: extensiones que queremos probar.
+```
+###🏹 Ffuf
+```
+ffuf -c -t 200 -fc 404 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -u "http://<IP>/index.php?FUZZ=/etc/passwd"
+Fuzzing para probar parámetros o rutas.
+    -fc 404: ignora errores 404.
+    
+    -t 200: usa 200 hilos (va más rápido).
+    
+    -u: URL con FUZZ donde se probarán los valores.
+```
+
