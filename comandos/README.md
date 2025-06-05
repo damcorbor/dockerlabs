@@ -25,6 +25,7 @@ Hace fuzzing para encontrar directorios o archivos ocultos.
     -w: diccionario.
     -x: extensiones que queremos probar.
 ```
+
 ###🏹 Ffuf
 ```
 ffuf -c -t 200 -fc 404 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -u "http://<IP>/index.php?FUZZ=/etc/passwd"
@@ -35,3 +36,15 @@ Fuzzing para probar parámetros o rutas.
     
     -u: URL con FUZZ donde se probarán los valores.
 ```
+
+### hydra
+```
+hydra -L usuarios.txt -p purpl3 -I ssh://172.17.0.2 -V -F -u
+```
+
+###   Find
+```
+find / -perm -4000 -user root 2>/dev/null
+```
+
+
