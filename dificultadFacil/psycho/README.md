@@ -130,7 +130,7 @@ En este reto hemos visto:
 nmap -p- --open -A -sS -Pn -n <IP>
 Escanea puertos y detecta servicios.
 
-- -p-: escanea todos los puertos.
+-   -p-: escanea todos los puertos.
 
 - --open: muestra solo los puertos abiertos.
 
