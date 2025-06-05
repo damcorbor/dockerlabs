@@ -1,4 +1,4 @@
-# 🐳 DockerLabs.es - Soluciones y Acceso
+# 🐳 DockerLabs.es - Acceso
 
 Bienvenido a este repositorio donde recopilo mis soluciones, apuntes y métodos de acceso a las máquinas de la plataforma [DockerLabs.es](https://dockerlabs.es).
 
