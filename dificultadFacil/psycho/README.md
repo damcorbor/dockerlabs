@@ -128,6 +128,8 @@ En este reto hemos visto:
 ### 🔍 Nmap
 ```
 nmap -p- --open -A -sS -Pn -n <IP>
+Escanea puertos y detecta servicios.
+
 - -p-: escanea todos los puertos.
 
 - --open: muestra solo los puertos abiertos.
@@ -139,4 +141,12 @@ nmap -p- --open -A -sS -Pn -n <IP>
 - -Pn: no hace ping previo.
 
 - -n: no resuelve nombres DNS. 
+```
+
+### 🪓 Gobuster
+```
+gobuster dir -u http://<IP>/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,py,html,txt,js
+Hace fuzzing para encontrar directorios o archivos ocultos.
+- -w: diccionario.
+- -x: extensiones que queremos probar.
 ```  
