@@ -49,9 +49,9 @@ En el archivo `/etc/passwd` vemos que hay dos usuarios interesantes: **luisillo*
 Volviendo al puerto 22, podríamos intentar un ataque de fuerza bruta... pero mejor buscamos algo más limpio. Vamos a ver si podemos acceder a la clave privada **id_rsa** de alguno de estos usuarios.
 
 Probaremos con:
-
+``
 http://IP/index.php?secret=/home/vaxei/.ssh/id_rsa
-
+``
 
 ![IMAGEN ID_RSA](./imagenes/id_rsa_vaxei.png)
 
