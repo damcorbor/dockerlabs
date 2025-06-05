@@ -19,7 +19,6 @@ La propia plataforma [DockerLabs.es](https://dockerlabs.es) explica cómo inicia
 1. **Descarga el laboratorio en formato `.zip` desde DockerLabs.**  
    Normalmente lo encontrarás en el propio reto.
 
-   ![Ejemplo de descarga](./imagenes/descarga.png)
 
 2. **Descomprime el archivo ZIP.**  
    Puedes hacerlo desde la terminal con el comando:
