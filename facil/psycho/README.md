@@ -113,11 +113,11 @@ Máquina comprometida 🔓
 
 En este reto hemos visto:
   
-  Cómo detectar y explotar una vulnerabilidad LFI.
+  - Cómo detectar y explotar una vulnerabilidad LFI.
 
-  Cómo escalar privilegios desde un usuario normal usando sudo + binarios vulnerables (perl).
+  - Cómo escalar privilegios desde un usuario normal usando sudo + binarios vulnerables (perl).
 
-  Cómo hacer movimiento lateral a otro usuario (vaxei → luisillo).
+  - Cómo hacer movimiento lateral a otro usuario (vaxei → luisillo).
 
-  Y cómo explotar permisos de escritura en un directorio para ejecutar un script como root.
+  - Y cómo explotar permisos de escritura en un directorio para ejecutar un script como root.
 
