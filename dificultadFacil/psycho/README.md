@@ -121,9 +121,7 @@ En este reto hemos visto:
 
   - Y cómo explotar permisos de escritura en un directorio para ejecutar un script como root.
 
-
-
-
+<br><br><br>
 
 ## 🛠️ Herramientas, comandos y servicios usados
 
