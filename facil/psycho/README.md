@@ -112,6 +112,7 @@ Máquina comprometida 🔓
 ## 🏁 Conclusión
 
 En este reto hemos visto:
+  
   Cómo detectar y explotar una vulnerabilidad LFI.
 
   Cómo escalar privilegios desde un usuario normal usando sudo + binarios vulnerables (perl).
