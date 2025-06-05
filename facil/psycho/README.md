@@ -38,9 +38,9 @@ Probamos con un **fuzzing a parámetros** usando ffuf para ver si alguno activa 
 ## 💥 Fase 2 - Explotación
 
 Con esto, accedemos al navegador y probamos añadiendo `?secret=` al final de la URL. Por ejemplo:
-
+``
 http://IP/index.php?secret=/etc/passwd
-
+``
 
 ![IMAGEN /ETC/PASSWD](./imagenes/LFI_funciona.png)
 
