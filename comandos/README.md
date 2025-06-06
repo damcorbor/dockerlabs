@@ -72,7 +72,7 @@ find / -perm -4000 -user root 2>/dev/null
     2>/dev/null: oculta errores (por ejemplo, por falta de permisos).
 
 ```
---
+
 ### 🐍 Python Shell Escalation
 Ejecuta una shell Bash desde un script Python, útil para escalar privilegios si se ejecuta como root.
 ```
