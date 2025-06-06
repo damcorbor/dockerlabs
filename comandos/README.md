@@ -26,7 +26,7 @@ gobuster dir -u http://<IP>/ -w /usr/share/wordlists/dirbuster/directory-list-2.
     -x: extensiones que queremos probar.
 ```
 
-###🏹 Ffuf
+### 🏹 Ffuf
 Fuzzing para probar parámetros o rutas.
 ```
 ffuf -c -t 200 -fc 404 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -u "http://<IP>/index.php?FUZZ=/etc/passwd"
@@ -72,7 +72,7 @@ find / -perm -4000 -user root 2>/dev/null
     2>/dev/null: oculta errores (por ejemplo, por falta de permisos).
 
 ```
-
+--
 ### 🐍 Python Shell Escalation
 Ejecuta una shell Bash desde un script Python, útil para escalar privilegios si se ejecuta como root.
 ```
