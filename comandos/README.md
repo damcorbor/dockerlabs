@@ -22,7 +22,9 @@ nmap -p- --open -A -sS -Pn -n <IP>
 Hace fuzzing para encontrar directorios o archivos ocultos.
 ```
 gobuster dir -u http://<IP>/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,py,html,txt,js
+
     -w: diccionario.
+
     -x: extensiones que queremos probar.
 ```
 
@@ -30,6 +32,7 @@ gobuster dir -u http://<IP>/ -w /usr/share/wordlists/dirbuster/directory-list-2.
 Fuzzing para probar parámetros o rutas.
 ```
 ffuf -c -t 200 -fc 404 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -u "http://<IP>/index.php?FUZZ=/etc/passwd"
+
     -fc 404: ignora errores 404.
     
     -t 200: usa 200 hilos (va más rápido).
