@@ -51,7 +51,7 @@ Revisamos los permisos de ese script y vemos que tenemos permisos de escritura y
 
 ![Permisos del script](./imagenes/permisos.png)
 
-Como está vacío, lo vamos a aprovechar para lanzar una shell como root usando Node.js. Si no sabes mucho de JS, no pasa nada: [GTFOBins](https://gtfobins.github.io/gtfobins/node/) tiene justo lo que necesitamos ✅.
+Vamos a lanzar una shell como root usando Node sobre un ``.js`` Si no sabes mucho de JS, no pasa nada: [GTFOBins](https://gtfobins.github.io/gtfobins/node/) tiene justo lo que necesitamos ✅.
 
 ![GTFOBINS](./imagenes/gto.png)
 
