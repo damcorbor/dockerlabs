@@ -51,7 +51,7 @@ Revisamos los permisos de ese script y vemos que tenemos permisos de escritura y
 
 ![Permisos del script](./imagenes/permisos.png)
 
-Vamos a lanzar una shell como root usando Node sobre un ``.js`` Si no sabes mucho de JS, no pasa nada: [GTFOBins](https://gtfobins.github.io/gtfobins/node/) tiene justo lo que necesitamos ✅.
+Vamos a lanzar una shell como root usando Node sobre un ``.js`` Si no sabes mucho de JS, no pasa nada: [GTFOBins](https://gtfobins.github.io/gtfobins/node/) tiene justo lo que necesitamos.
 
 ![GTFOBINS](./imagenes/gto.png)
 
@@ -63,5 +63,13 @@ Máquina comprometida 🔓
 
 ---
 
+## 🏁 Conclusión
 
+En este reto hemos aprendido y practicado varias técnicas clave de pentesting:
 
+- **Enumeración de servicios con Nmap**, descubriendo FTP accesible de forma anónima.
+- **Acceso por FTP** y descarga de archivos sensibles, aprovechando malconfiguraciones comunes.
+- **Ataque de fuerza bruta a ZIP protegido** con herramientas como *John the Ripper*.
+- **Obtención de credenciales** que permiten acceso por SSH a un usuario real del sistema.
+- **Escalada de privilegios mediante SUDO**, ejecutando Node.js con permisos de root.
+- **Aprovechamiento de permisos de escritura** sobre scripts ejecutados como root.
