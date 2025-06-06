@@ -1,5 +1,6 @@
 # 📚 Library
 > 💡 NOTA:  En mi [repositorio dockerlabs](https://github.com/damcorbor/dockerlabs/tree/main/comandos)  suelo ir dejando una lista con los comandos, herramientas y servicios que he ido usando durante los laboratorios, y los explico un poco por si alguien quiere repasarlos o usarlos como referencia.
+![nmap](./imagenes/portada.png)
 ---
 
 ## 🔍 Reconocimiento
@@ -44,7 +45,7 @@ Aunque solo tenemos permiso de lectura y ejecución, notamos que **el propietari
 
 Creamos un script personalizado, le damos permisos de ejecución y lo ejecutamos con sudo.
 
-![script](ruta/imagen_script.png)
+![script](./imagenes/script.png)
 
 Máquina comprometida 🔓
 
