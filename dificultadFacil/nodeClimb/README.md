@@ -45,6 +45,10 @@ export SHELL=/bin/sh
 source /etc/skel/.bashrc  
 ```
 
+---
+
+## ⚙️ Escalada de Privilegios
+
 Hacemos un `sudo -l` y descubrimos algo jugoso: podemos ejecutar **node** como cualquier usuario (sí, **root incluido**) sobre un archivo `.js` que está en el home del usuario `mario`. 
 
 Revisamos los permisos de ese script y vemos que tenemos permisos de escritura y además está vacío:
