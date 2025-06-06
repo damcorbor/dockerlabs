@@ -91,7 +91,7 @@ Vemos que no podemos modificar el `.py`, por lo que vamos a probar con los permi
 
 ![IMAGEN PERMISOS OPT](./imagenes/permisos-directorio.png)
 
-Vemos que **el directorio `/opt` es escribible**. Eso nos permite **borrar el script** y crear uno con el mismo nombre que nos dé una shell como root.
+Vemos que **el directorio `/opt` tine permisos de escritura**. Eso nos permite **borrar el script** y crear uno con el mismo nombre que nos dé una shell como root.
 
 Creamos nuestro propio `paw.py` con el siguiente contenido:
 
