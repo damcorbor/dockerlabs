@@ -43,11 +43,11 @@ Una vez dentro, ajustamos la shell y ejecutamos `sudo -l` para ver qué comandos
 
 Vemos que podemos ejecutar el binario **base64** como root sin necesidad de contraseña. Con **GTFOBins** verificamos que se puede usar para leer archivos.
 
-![gtfobins](./images/gtfobins.png)
+![gtfobins](./images/gftobins.png)
 
-Ya que el puerto **22 (SSH)** estaba abierto, intentamos leer el contenido de `/root/.ssh/id_rsa`, copiamos la clave privada y la guardamos en nuestra máquina.
+Ya que el puerto **22 (SSH)** estaba abierto, intentamos leer el contenido de `/root/.ssh/id_rsa`, copiamos la clave privada y la guardamos en nuestra máquina para acceder mediante ssh.
 
-![id_rsa](./images/id_rsa.png)
+![id_rsa](./images/base64.png)
 
 La clave tiene **passphrase**, así que usamos **John the Ripper** para crackearla.
 
