@@ -45,7 +45,7 @@ Lanzamos `sudo -l` para ver qué binarios se pueden ejecutar con privilegios ele
 
 Vemos que el usuario puede ejecutar **nano** como cualquier otro usuario, sin necesidad de contraseña. Usando **GTFOBins**, aprovechamos esto para escalar privilegios.
 
-![gftobins](./images/gftobins.png)  
+![gtfobins](./images/gtfobins.png)  
 ![root](./images/root.png)
 
 Máquina comprometida 🔓
